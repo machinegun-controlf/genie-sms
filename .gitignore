@@ -1,9 +1,13 @@
+# 모노레포 시스템
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+!.yarn/cache
+
+node_modules
 
 # IDE
 .idea
