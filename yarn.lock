@@ -711,6 +711,7 @@ __metadata:
     react-dom: "npm:^18.2.0"
     typescript: "npm:^5.2.2"
     vite: "npm:^5.1.4"
+    zustand: "npm:^4.5.2"
   peerDependencies:
     react: ^18.2.0
     react-dom: ^18.2.0
@@ -733,38 +734,10 @@ __metadata:
     react-dom: "npm:^18.2.0"
     typescript: "npm:^5.2.2"
     vite: "npm:^5.1.4"
+    zustand: "npm:^4.5.2"
   peerDependencies:
     react: ^18.2.0
     react-dom: ^18.2.0
-  languageName: unknown
-  linkType: soft
-
-"@genie/ds@workspace:packages/genie-ds":
-  version: 0.0.0-use.local
-  resolution: "@genie/ds@workspace:packages/genie-ds"
-  dependencies:
-    "@emotion/react": "npm:^11.11.4"
-    "@emotion/styled": "npm:^11.11.0"
-    "@mantine/core": "npm:^7.6.1"
-    "@mantine/hooks": "npm:^7.6.1"
-    "@types/react": "npm:^18.2.56"
-    "@types/react-dom": "npm:^18.2.19"
-    "@typescript-eslint/eslint-plugin": "npm:^7.0.2"
-    "@typescript-eslint/parser": "npm:^7.0.2"
-    "@vitejs/plugin-react": "npm:^4.2.1"
-    eslint: "npm:^8.56.0"
-    eslint-plugin-react-hooks: "npm:^4.6.0"
-    eslint-plugin-react-refresh: "npm:^0.4.5"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    typescript: "npm:^5.2.2"
-    vite: "npm:^5.1.4"
-  peerDependencies:
-    "@emotion/react": ^11.11.4
-    "@emotion/styled": ^11.11.0
-    "@mantine/core": ^7.6.1
-    "@mantine/hooks": ^7.6.1
-    react: ^18.2.0
   languageName: unknown
   linkType: soft
 
@@ -887,6 +860,35 @@ __metadata:
   checksum: 10c0/89f9de0b26e7bddd5969ebf1e1c34072729c5734181d58dc954076f25541a4582a9b9ce68d25d96e1c96523f5cd25df7039d4ac6228894bcbcf0fefe50482628
   languageName: node
   linkType: hard
+
+"@mcg/ds@workspace:packages/mcg-ds":
+  version: 0.0.0-use.local
+  resolution: "@mcg/ds@workspace:packages/mcg-ds"
+  dependencies:
+    "@emotion/react": "npm:^11.11.4"
+    "@emotion/styled": "npm:^11.11.0"
+    "@mantine/core": "npm:^7.6.1"
+    "@mantine/hooks": "npm:^7.6.1"
+    "@types/react": "npm:^18.2.56"
+    "@types/react-dom": "npm:^18.2.19"
+    "@typescript-eslint/eslint-plugin": "npm:^7.0.2"
+    "@typescript-eslint/parser": "npm:^7.0.2"
+    "@vitejs/plugin-react": "npm:^4.2.1"
+    eslint: "npm:^8.56.0"
+    eslint-plugin-react-hooks: "npm:^4.6.0"
+    eslint-plugin-react-refresh: "npm:^0.4.5"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    typescript: "npm:^5.2.2"
+    vite: "npm:^5.1.4"
+  peerDependencies:
+    "@emotion/react": ^11.11.4
+    "@emotion/styled": ^11.11.0
+    "@mantine/core": ^7.6.1
+    "@mantine/hooks": ^7.6.1
+    react: ^18.2.0
+  languageName: unknown
+  linkType: soft
 
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
@@ -2957,9 +2959,6 @@ __metadata:
     eslint-plugin-react-hooks: "npm:^4.6.0"
     eslint-plugin-unused-imports: "npm:^3.1.0"
     prettier: "npm:^3.2.5"
-  dependenciesMeta:
-    eslint@8.57.0:
-      unplugged: true
   languageName: unknown
   linkType: soft
 
@@ -5395,6 +5394,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"use-sync-external-store@npm:1.2.0":
+  version: 1.2.0
+  resolution: "use-sync-external-store@npm:1.2.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/ac4814e5592524f242921157e791b022efe36e451fe0d4fd4d204322d5433a4fc300d63b0ade5185f8e0735ded044c70bcf6d2352db0f74d097a238cebd2da02
+  languageName: node
+  linkType: hard
+
 "vite@npm:^5.1.4":
   version: 5.1.4
   resolution: "vite@npm:5.1.4"
@@ -5569,5 +5577,25 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: 10c0/dceb44c28578b31641e13695d200d34ec4ab3966a5729814d5445b194933c096b7ced71494ce53a0e8820685d1d010df8b2422e5bf2cdea7e469d97ffbea306f
+  languageName: node
+  linkType: hard
+
+"zustand@npm:^4.5.2":
+  version: 4.5.2
+  resolution: "zustand@npm:4.5.2"
+  dependencies:
+    use-sync-external-store: "npm:1.2.0"
+  peerDependencies:
+    "@types/react": ">=16.8"
+    immer: ">=9.0.6"
+    react: ">=16.8"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    immer:
+      optional: true
+    react:
+      optional: true
+  checksum: 10c0/aee26f11facebb39b016e89539f72a72c2c00151208907fc909c3cedd455728240e09e01d98ebd3b63a2a3518a5917eac5de6c853743ca55a1655296d750bb48
   languageName: node
   linkType: hard
